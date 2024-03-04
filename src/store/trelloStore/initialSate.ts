@@ -1,9 +1,11 @@
-type titleType = {
+type TitleType = {
   title: string;
   id: number;
+  text: string;
+  image: string | null;
 };
 type TypeArr = {
-  todo: titleType[];
+  todo: TitleType[];
 };
 export const initialState: TypeArr = {
   todo: [],
